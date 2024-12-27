@@ -87,6 +87,7 @@
        background-attachment: fixed;
    }
 
+   
    .offcanvas {
        background-image: url(../imag/textura-gris.jpg);
        background-repeat: no-repeat;
@@ -105,6 +106,7 @@
        justify-content: center !important;
        padding-left: 15px;
        font-weight: bold;
+       --bs-nav-link-hover-color: skyblue;                      
    }
 
    .navbar-brand {
@@ -333,8 +335,8 @@
    }
 
    .instagram img {
-       width: 5vw;
-       height: 5vh;
+       width: 8vw;
+       height: 8vh;
    }
 
    .facebook {
@@ -464,14 +466,17 @@
        .whatsapp {
            width: 95%;
        }
-
+       .whatsapp img{width: 12vw;}
        .instagram {
-           width: 95%
-       }
+           width: 95%;
+           }
+        .instagram img {width: 21vw;
+                        height: 8vh;}
 
        .facebook {
            width: 95%
        }
+       .facebook img {width: 16vw;}
 
        aside {
            margin-right: 25x;
