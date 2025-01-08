@@ -123,16 +123,25 @@
    .lista-ventajas img {width: 50px;
                         height: 50px}
     .lista-ventajas h4{color: white;
-                        font-size: 40px;}
+                        font-size: 55px;}
+                        
+                    
 
-    .lista-ventajas{ margin-top: 20px}
-    .ventaja {      
+    .lista-ventajas{ 
+        margin-top: 15px;
+        margin-right:15px;
+        margin-left: 15px;
+    }
+    .ventaja {      background-color: black;
+                    color:white;
                     display: flex;
+                    width: fit-content;
                     flex-direction: row-reverse;
-                    justify-content: center;
+                    justify-content: left;
                     align-items: center;
                     gap: 22px;
-                    margin-top:30px}
+                    margin-top:30px;
+                    border: ridge white 10px}
    .ventaja:hover{transform:scale(1.1)}
 
                    
@@ -144,8 +153,11 @@
 
    .contenedor-entrega {
        width: 100vw;
-       height: 80vh;
-       
+       height: 100vh;
+       background-image: url(../imag/fonto-moto.jpeg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
    }
 
    .contenedor-entrega .motoloca {
