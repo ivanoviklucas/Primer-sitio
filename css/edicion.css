@@ -79,6 +79,7 @@
    header {
        height: 50px;
    }
+
    .bg-dark {
        background-image: url(../imag/textura-gris.jpg);
        background-repeat: no-repeat;
@@ -87,7 +88,7 @@
        background-attachment: fixed;
    }
 
-   
+
    .offcanvas {
        background-image: url(../imag/textura-gris.jpg);
        background-repeat: no-repeat;
@@ -106,7 +107,7 @@
        justify-content: center !important;
        padding-left: 15px;
        font-weight: bold;
-       --bs-nav-link-hover-color: skyblue;                      
+       --bs-nav-link-hover-color: skyblue;
    }
 
    .navbar-brand {
@@ -114,50 +115,12 @@
        font-weight: bolder;
    }
 
-   .w-100 {
-        width: 80vw;
-       height: 20vh;
-       margin-top: 20px;
-       object-fit: contain;
-   }
-   .lista-ventajas img {width: 50px;
-                        height: 50px}
-    .lista-ventajas h4{color: white;
-                        font-size: 55px;}
-                        
-                    
-
-    .lista-ventajas{ 
-        margin-top: 15px;
-        margin-right:15px;
-        margin-left: 15px;
-    }
-    .ventaja {      background-color: black;
-                    color:white;
-                    display: flex;
-                    width: fit-content;
-                    flex-direction: row-reverse;
-                    justify-content: left;
-                    align-items: center;
-                    gap: 22px;
-                    margin-top:30px;
-                    border: ridge white 10px}
-   .ventaja:hover{transform:scale(1.1)}
-
-                   
-   /*destino*/
-   .carousel.slide {
-    margin-left: 15px;
-       margin-right: 15px
-   }
-
+   /*index*/
    .contenedor-entrega {
        width: 100vw;
-       height: 100vh;
-       background-image: url(../imag/fonto-moto.jpeg);
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center;
+       height: 120vh;
+       color: black;
+
    }
 
    .contenedor-entrega .motoloca {
@@ -167,8 +130,69 @@
        background-repeat: no-repeat;
        background-size: cover;
        background-position: center;
-       margin-right:15px;
+       margin-right: 15px;
        margin-left: 15px;
+   }
+
+   .lista-ventajas img {
+       width: 40px;
+       height: 60px
+   }
+
+   .lista-ventajas h4 {
+       color: black;
+       font-size: 60px;
+   }
+
+
+
+   .lista-ventajas {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       margin-top: 15px;
+       margin-right: 15px;
+       margin-left: 15px;
+   }
+
+   .ventaja {
+       background-color: white;
+       color: black;
+       display: flex;
+       width: fit-content;
+       flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+       gap: 5px;
+       margin-right: 15px;
+       border: ridge white 15px
+   }
+
+   .ventaja:hover {
+       transform: scale(1.1)
+   }
+
+   .ventaja h5 {
+       color: black;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       text-decoration: underline;
+       position: relative;
+       font-size: 20x;
+   }
+
+
+   /*destino*/
+   .w-100 {
+       width: 80vw;
+       height: 20vh;
+       margin-top: 20px;
+       object-fit: contain;
+   }
+
+   .carousel.slide {
+       margin-left: 15px;
+       margin-right: 15px
    }
 
    /* footer general todos los archivos*/
@@ -247,6 +271,19 @@
        margin: 0 auto;
        border: ridge black 8px;
    }
+
+   .carousel.slide {
+       margin-left: 15px;
+       margin-right: 15px
+   }
+
+   .w-100 {
+       width: 80vw;
+       height: 20vh;
+       margin-top: 20px;
+       object-fit: contain;
+   }
+
 
    /*pedi-tu-envio*/
    .solicitud {
@@ -399,16 +436,18 @@
        width: 100%;
        height: 100%;
    }
-    /*piso el padding de bootstrap del nav*/ 
+
+   /*piso el padding de bootstrap del nav*/
    ol,
    ul {
        padding-left: 0px;
        padding-left: 21px;
        padding-right: 21px;
-       padding-top: 10px}
+       padding-top: 10px
+   }
 
    @media screen and (max-width: 420px) {
-        .footer-padre {
+       .footer-padre {
            flex-direction: column;
            justify-content: space-evenly;
            align-items: center;
@@ -428,7 +467,7 @@
            width: 100%;
        }
 
-     
+
 
        .zona {
            flex-direction: column;
@@ -439,16 +478,75 @@
            margin-top: 5px
        }
    }
-   @media screen and (max-width:150px) and (max-width:300px) {
-    .zona img {width: 25px;
-    height: 25px;}
-    .zona {width: 100%;}
+
+   @media screen and (min-width:150px) and (max-width:360px) {
+
+       .zona img {
+           width: 25px;
+           height: 25px;
+       }
+
+       .zona {
+           width: 100%;
+       }
+
+       .lista-ventajas {
+           flex-direction: column;
+           align-items: flex-start;
+           justify-content: flex-start;
+           margin-right: 5px;
+           margin-left: 5px;
+           margin-top: 0px;
+       }
+
+       .lista-ventajas .ventaja {
+           margin-top: 20px;
+       }
    }
+
    @media screen and (max-width:300px) {
-    .zona img {width:100px;
-    height: 100px;}
+       .zona img {
+           width: 100px;
+           height: 100px;
+       }
+
+       .zona {
+           width: 100%;
+       }
+
+       .lista-ventaja {
+           flex-direction: column;
+           justify-content: left;
+           align-items: center;
+       }
+
+       .ventaja {
+           background-color: white;
+           color: black;
+           display: flex;
+           width: fit-content;
+           flex-direction: column-reverse;
+           justify-content: center;
+           align-items: center;
+           gap: 0px;
+           margin-top: 2px;
+           border: ridge white 5px
+       }
+
+       .lista-ventajas img {
+           width: 30px;
+           height: 30px;
+       }
+
+       .lista-ventaja h5 {
+
+
+
+           color: black;
+           font-size: 21px
+       }
    }
-   .zona {width: 100%;}
+
    @media screen and (max-width: 550px) {
        header {
            height: 80px;
@@ -477,7 +575,8 @@
 
 
        .zona {
-           margin-left: 21px;
+           width: 80%;
+           margin-left: 15px;
            margin-right: 21px;
        }
 
@@ -489,9 +588,9 @@
 
        .w-100 {
            height: 15vh;
-           
+
        }
-       
+
 
        .texto p {
            margin-left: 30px;
@@ -504,69 +603,128 @@
        .whatsapp {
            width: 95%;
        }
-       .whatsapp img{width: 12vw;}
+
+       .whatsapp img {
+           width: 12vw;
+       }
+
        .instagram {
            width: 95%;
-           }
-        .instagram img {width: 21vw;
-                        height: 8vh;}
+       }
+
+       .instagram img {
+           width: 21vw;
+           height: 8vh;
+       }
 
        .facebook {
            width: 95%
        }
-       .facebook img {width: 16vw;}
+
+       .facebook img {
+           width: 16vw;
+       }
 
        aside {
            margin-right: 25x;
            margin-left: 22px
        }
-    
+
        .footer-padre {
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 30px
-    }
-    .carousel-control-prev{background-image: url(../imag/textura-gris.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    .carousel-control-next
-        {background-image: url(../imag/textura-gris.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-}
-
-   form div {
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center;
-       background-attachment: fixed
-   }
-
-
-
-   @media screen and (max-width: 550px) {
-       .contenedor-entrega {
-           height: 40vh;
+           flex-direction: column;
+           justify-content: space-evenly;
+           align-items: center;
+           margin-top: 30px
        }
 
-       .contenedor-video {
+       .carousel-control-prev {
+           background-image: url(../imag/textura-gris.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+       }
+
+       .carousel-control-next {
+           background-image: url(../imag/textura-gris.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+       }
+
+       .lista-ventaja {
+           flex-direction: column;
+           justify-content: left;
+           align-items: center;
+       }
+
+       .ventaja {
+           background-color: black;
+           color: white;
+           display: flex;
+           width: fit-content;
+           flex-direction: column-reverse;
+           justify-content: center;
+           align-items: center;
+           gap: 5px;
+           margin-top: 2px;
+           border: ridge white 5px
+       }
+
+       .lista-ventajas img {
+           width: 30px;
+           height: 30px;
+       }
+
+
+       .lista-ventajas h4 {
+           font-size: 21px
+       }
+
+
+       form div {
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed
+       }
+
+       .contenedor-entrega {
+           height: 80vh
+       }
+
+       .contenedor-entrega .motoloca {
+           margin-top: 20px;
+           height: 40%;
+           background-image: url("../imag/moto-3.jpg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           margin-right: 2px;
+           margin-left: 2px;
+       }
+
+       .contenedor-entrega {
+           height: 60vh
+       }
+
+       .contenedor-vi {
            display: flex;
            flex-direction: column;
            margin-top: 35px;
-        }
+       }
+
        video {
            width: 100%;
            height: 100%;
        }
-   }}
+   }
+
    /*responsive destino*/
-   @media screen and  (min-width: 550px) and (max-width: 765px){
-    .zona img {width: 150px; 
-    height: 150px;}
+   @media screen and (min-width: 550px) and (max-width: 765px) {
+       .zona img {
+           width: 150px;
+           height: 150px;
+       }
    }
